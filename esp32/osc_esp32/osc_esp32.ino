@@ -24,8 +24,8 @@ IPAddress ip;                           // The ESP's IP
 // Network Stuff
 // -----------------------
 
-char ssid[] = "";             // your network SSID (name)
-char pass[] = "";               // your network password
+char ssid[] = "";                       // your network SSID (name)
+char pass[] = "";                       // your network password
 const unsigned int receivePort = 8888;  // Local port to listen (if listening for some data)
 const unsigned int outPort = 9999;      // Port to send to
 
