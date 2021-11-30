@@ -10,7 +10,7 @@
 #include "Arduino.h"
 #include <ESP8266WiFi.h> // This depends on board architecture, ESP32 needs something else
 #include <WiFiUdp.h>
-#include <SPI.h>  
+#include <SPI.h>
 #include <OSCMessage.h>
 
 // -----------------------
@@ -24,8 +24,8 @@ IPAddress ip;                           // The ESP's IP
 // Network Stuff
 // -----------------------
 
-char ssid[] = "chaosPhone";             // your network SSID (name)
-char pass[] = "itschaos";               // your network password
+char ssid[] = "";             // your network SSID (name)
+char pass[] = "";               // your network password
 const unsigned int receivePort = 8888;  // Local port to listen (if listening for some data)
 const unsigned int outPort = 9999;      // Port to send to
 
@@ -151,7 +151,7 @@ void loop() {
 
   // Checks if we received a message
   receiveMessage();
-  
+
   // Sets delay.. wait
   delay(16);
 }
